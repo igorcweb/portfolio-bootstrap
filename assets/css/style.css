@@ -79,7 +79,7 @@ img.profile {
   margin-right: 1.4rem;
 }
 
-div.container {
+div.container-fluid {
   flex: 1 0 auto;
   background-image: url('../images/pattern.jpg');
   background-attachment: fixed;
