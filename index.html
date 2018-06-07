@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en h-100">
 
 <head>
   <!-- Required meta tags -->
@@ -16,24 +16,31 @@
   <title>Portfolio Bootstrap</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
   <header>
     <a href="./index.html">
-      <h1>Igor Chernyshev</h1>
+      <h1 class="m-0">Igor Chernyshev</h1>
     </a>
-    <nav>
-      <a href="./index.html">About</a>
-      <a class="portfolio" href="./portfolio.html">Portfolio</a>
-      <a href="./contact.html">Contact</a>
+    <nav class="container py-2">
+      <div class="row mx-0">
+        <div class="col">
+          <a href="./index.html">About</a>
+        </div>
+        <div class="col">
+          <a class="portfolio" href="./portfolio.html">Portfolio</a>
+        </div>
+        <div class="col">
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
     </nav>
   </header>
-  <div class="wrapper">
+  <div class="container">
     <section>
       <div class="content">
-        <h2>About Me</h2>
+        <h2 class="mb-4">About Me</h2>
         <img class="profile" src="./assets/images/profile.png" alt="Igor Chernyshev">
-
-        <p>I am an accomplished musician and teacher with big passion for web development. My first serious project was
+        <p class="mt-4">I am an accomplished musician and teacher with big passion for web development. My first serious project was
           <a target="_blank" href="https://note-learning-game.herokuapp.com/">Note-Learning Game</a>
           which is an app that makes learning how to read music fun. It has been used successfully by music educators and studensts.
         </p>
