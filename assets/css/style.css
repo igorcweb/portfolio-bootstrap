@@ -140,6 +140,7 @@ textarea {
 
 div.portfolio {
   display: inline-block;
+  padding: 0;
   transition: 0.4s;
 }
 
