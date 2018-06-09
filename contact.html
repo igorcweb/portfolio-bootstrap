@@ -16,32 +16,37 @@
 </head>
 
 <body>
-  <header>
-    <a href="./index.html">
-      <h1>Igor Chernyshev</h1>
-    </a>
-    <nav>
-      <a href="index.html">About</a>
-      <a class="portfolio" href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="container-fluid">
+    <div class="row">
+      <a class="col-12 col-sm-6 px-0 ml-sm-4 ml-md-4 d-sm-inline-block mr-sm-auto" href="./index.html">
+        <h1 class="ml-md-3 mb-0 d-sm-inline-block">Igor Chernyshev</h1>
+      </a>
+      <nav class="col-12 col-sm-5 col-md-4 mt-sm-3 mr-sm-4 mr-md-5 text-center text-sm-right p-3 p-sm-0">
+        <a class="mr-4 mr-sm-1" href="./index.html">About</a>
+        <a class="portfolio px-4 px-sm-2" href="./portfolio.html">Portfolio</a>
+        <a class="ml-4 ml-sm-1" href="./contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
   <div class="wrapper">
     <section>
       <div class="content">
-        <h2>Contact</h2>
-        <form action="contact.html" method="GET">
-          <label>Name
-            <input type="text" placeholder="John Smith">
-          </label>
-          <label>Email
-            <input type="email" placeholder="example@gmail.com">
-          </label>
-          <label>Message
-            <textarea name="" id="" cols="30" rows="7"></textarea>
-          </label>
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+        <h2 class="mb-4">Contact</h2>
+        <form action="./contact.html">
+          <div class="form-group">
+            <label class="mb-1" for="name">Name</label>
+            <input id="name" class="form-control" type="text" placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label class="mb-1" for="email">Email</label>
+            <input id="email" class="form-control" type="email" placeholder="example@gmail.com">
+          </div>
+          <div class="form-group">
+            <label class="mb-1" for="message">Message</label>
+            <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
+          </div>
+          <button class="btn mr-3 py-1" type="submit">Submit</button>
+          <button class="btn py-1" type="Reset">Reset</button>
         </form>
       </div>
     </section>
