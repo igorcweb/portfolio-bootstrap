@@ -18,7 +18,7 @@
 <body>
   <header class="container-fluid">
     <div class="row">
-      <a class="col-12 col-sm-6 px-0 ml-sm-4 ml-md-4 d-sm-inline-block mr-sm-auto" href="./index.html">
+      <a class="col-12 col-sm-6 px-0 ml-sm-4 ml-md-4 ml-xl-5 d-sm-inline-block mr-sm-auto" href="./index.html">
         <h1 class="ml-md-3 mb-0 d-sm-inline-block">Igor Chernyshev</h1>
       </a>
       <nav class="col-12 col-sm-5 col-md-4 mt-sm-3 mr-sm-4 mr-md-5 text-center text-sm-right p-3 p-sm-0">
@@ -28,28 +28,33 @@
       </nav>
     </div>
   </header>
-  <div class="wrapper">
-    <section>
-      <div class="content">
-        <h2 class="mb-4">Contact</h2>
-        <form action="./contact.html">
-          <div class="form-group">
-            <label class="mb-1" for="name">Name</label>
-            <input id="name" class="form-control" type="text" placeholder="John Smith">
+  <div class="container-fluid wrapper">
+    <div class="row">
+      <div class="col-12 col-md-11 col-lg-9 col-xl-8">
+        <section class="m-3 m-sm-2 m-md-4 m-xl-5">
+          <div class="content m-4 m-md-5 pb-3">
+            <h2 class="mb-4">Contact</h2>
+            <form action="./contact.html">
+              <div class="form-group">
+                <label class="mb-1" for="name">Name</label>
+                <input id="name" class="form-control" type="text" placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                <label class="mb-1" for="email">Email</label>
+                <input id="email" class="form-control" type="email" placeholder="example@gmail.com">
+              </div>
+              <div class="form-group">
+                <label class="mb-1" for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
+              </div>
+              <button class="btn mr-3 py-1" type="submit">Submit</button>
+              <button class="btn py-1" type="Reset">Reset</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label class="mb-1" for="email">Email</label>
-            <input id="email" class="form-control" type="email" placeholder="example@gmail.com">
-          </div>
-          <div class="form-group">
-            <label class="mb-1" for="message">Message</label>
-            <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
-          </div>
-          <button class="btn mr-3 py-1" type="submit">Submit</button>
-          <button class="btn py-1" type="Reset">Reset</button>
-        </form>
+        </section>
       </div>
-    </section>
+    </div>
+
   </div>
 
   <footer>
