@@ -140,7 +140,6 @@ textarea {
 
 div.portfolio {
   display: inline-block;
-
   transition: 0.4s;
 }
 
@@ -153,6 +152,7 @@ img.game {
 }
 
 h4.image-text {
+  margin-bottom: 0;
   position: relative;
   text-align: center;
   padding: 5px;
