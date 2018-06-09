@@ -153,6 +153,7 @@ img.game {
 }
 
 h4.image-text {
+  font-size: 1.2rem;
   margin-bottom: 0;
   position: relative;
   text-align: center;
@@ -206,12 +207,11 @@ h4.image-text {
 
   img.game {
     display: inline-block;
-    width: 50%;
   }
 
-  h4.image-text {
+  /* h4.image-text {
     width: 50%;
-  }
+  } */
 }
 
 /* Medium */
