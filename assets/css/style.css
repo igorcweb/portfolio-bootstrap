@@ -1,13 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777;
+  /* I only used flexbox for sticky footer*/
+  display: flex;
+  flex-direction: column;
   background-image: url('../images/dust_scratches.png');
 }
 
 h1,
 h2 {
   font-family: 'Georgia', Times, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+section {
+  background-image: url('../images/dust_scratches.png');
+  clear: both;
+  width: 340px;
+  margin: 1.7rem auto;
 }
 
 h1 {
@@ -16,20 +32,22 @@ h1 {
   color: #fff;
   padding: 0.8rem;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 h2 {
+  font-size: 1.8rem;
   color: #4aaaa5;
   padding: 1rem 0;
   border-bottom: 2px solid #ccc;
 }
 
-a:hover {
-  text-decoration: none;
+p a {
+  color: #4aaaa5;
 }
 
-nav {
-  max-width: 370px;
+a {
+  text-decoration: none;
 }
 
 nav a {
@@ -41,27 +59,18 @@ nav a {
 
 nav a:hover {
   color: #4aaaa5;
-  text-decoration: none;
 }
+
 a.portfolio {
-  padding: 0 34px;
+  margin: 0 1.4rem;
+  padding: 0 1.4rem;
   border-right: 2px solid #ccc;
   border-left: 2px solid #ccc;
 }
 
-section {
-  background-image: url('../images/dust_scratches.png');
-  clear: both;
-  width: 340px;
-  margin: 1.7rem auto;
-}
-
-p a {
-  color: #4aaaa5;
-}
-
-a {
-  text-decoration: none;
+nav {
+  width: 274px;
+  margin: 1rem auto;
 }
 
 div.content {
@@ -79,8 +88,9 @@ img.profile {
   margin-right: 1.4rem;
 }
 
-div.container-fluid {
+div.wrapper {
   flex: 1 0 auto;
+  /* background-color: #ededed; */
   background-image: url('../images/pattern.jpg');
   background-attachment: fixed;
   border-top: 2px solid #ccc;
@@ -102,23 +112,38 @@ footer p {
   color: #fff;
 }
 
+input,
+textarea {
+  width: 97.5%;
+  padding: 0.6rem;
+  outline: none;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
 button {
+  width: 5.5rem;
+  height: 2rem;
+  line-height: 0.2rem;
+  margin-right: 16px;
   color: #fff;
   background-color: #4aaaa5;
-  outline: none;
+  outline: 0;
+  cursor: pointer;
   transition: 0.2s;
 }
 
 button:hover {
   background-color: #fff;
   color: #4aaaa5;
-  border-color: #4aaaa5;
+  border: 2px solid #4aaaa5;
 }
 
 div.portfolio {
   display: inline-block;
-  height: 12.7rem;
-  /* margin-bottom: 3rem; */
+  height: 12.3rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
   transition: 0.4s;
 }
 
@@ -130,47 +155,48 @@ img.game {
   width: 258px;
 }
 
-h4.image-text {
+h3.image-text {
   position: relative;
   text-align: center;
   padding: 5px;
-  width: 258px;
+  width: 248px;
+  bottom: 23px;
   left: 0;
   background-color: #4aaaa5;
   color: #fff;
 }
 
 /* Small */
-/* @media screen and (min-width: 640px) { */
-/* header,
+@media screen and (min-width: 640px) {
+  header,
   section {
     width: 590px;
     margin: 0 auto;
-  } */
+  }
 
-/* h1 {
+  h1 {
     display: inline-block;
-  } */
+  }
 
-/* section {
+  section {
     margin: 2rem auto;
-  } */
-/* nav {
+  }
+  nav {
     float: right;
     width: auto;
-  } */
+  }
 
-/* a.portfolio {
+  a.portfolio {
     margin: 0 0.8rem;
     padding: 0 0.8rem;
-  } */
+  }
 
-/* div.wrapper {
+  div.wrapper {
     padding: 1rem 0;
     margin: 0;
-  } */
+  }
 
-/* img.profile {
+  img.profile {
     float: left;
     width: 150px;
   }
@@ -190,11 +216,11 @@ h4.image-text {
 
   h3.image-text {
     width: 225px;
-  } */
-/* } */
+  }
+}
 
 /* Medium */
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   header {
     width: 740px;
   }
@@ -223,10 +249,10 @@ h4.image-text {
   h3.image-text {
     width: 225px;
   }
-} */
+}
 
 /* Large */
-/* @media screen and (min-width: 980px) {
+@media screen and (min-width: 980px) {
   header,
   section {
     width: 960px;
@@ -251,4 +277,4 @@ h4.image-text {
   h3.image-text {
     width: 284px;
   }
-} */
+}

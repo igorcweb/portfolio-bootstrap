@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
   <!-- Required meta tags -->
@@ -12,47 +12,36 @@
 
   <link rel="icon" type="image/png" href="./assets/images/brackets.png">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Portfolio Bootstrap</title>
+  <title>Portfolio with Media Queries</title>
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
   <header>
     <a href="./index.html">
-      <h1 class="m-0">Igor Chernyshev</h1>
+      <h1>Igor Chernyshev</h1>
     </a>
-    <nav class="container-fluid py-2">
-      <div class="row mx-0">
-        <div class="col">
-          <a href="./index.html">About</a>
-        </div>
-        <div class="col">
-          <a class="portfolio" href="./portfolio.html">Portfolio</a>
-        </div>
-        <div class="col">
-          <a href="./contact.html">Contact</a>
-        </div>
-      </div>
+    <nav>
+      <a href="index.html">About</a>
+      <a class="portfolio" href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="container-fluid">
+  <div class="wrapper">
     <section>
       <div class="content">
-        <h2 class="mb-4">Contact</h2>
-        <form action="./contact.html">
-          <div class="form-group">
-            <label class="mb-1" for="name">Name</label>
-            <input id="name" class="form-control" type="text" placeholder="John Smith">
-          </div>
-          <div class="form-group">
-            <label class="mb-1" for="email">Email</label>
-            <input id="email" class="form-control" type="email" placeholder="example@gmail.com">
-          </div>
-          <div class="form-group">
-            <label class="mb-1" for="message">Message</label>
-            <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
-          </div>
-          <button class="btn mr-3" type="submit">Submit</button>
-          <button class="btn" type="Reset">Reset</button>
+        <h2>Contact</h2>
+        <form action="contact.html" method="GET">
+          <label>Name
+            <input type="text" placeholder="John Smith">
+          </label>
+          <label>Email
+            <input type="email" placeholder="example@gmail.com">
+          </label>
+          <label>Message
+            <textarea name="" id="" cols="30" rows="7"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
         </form>
       </div>
     </section>
@@ -62,8 +51,6 @@
     <p class="footer">&copy;
       <span id="year"></span> Igor Chernyshev</p>
   </footer>
-
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
